@@ -2,6 +2,8 @@
 
 apt install nodejs npm -y
 
+rm -fr chinaunicom-AutoSignMachine
+
 git clone https://github.com/simo8102/chinaunicom-AutoSignMachine
 
 cd chinaunicom-AutoSignMachine
