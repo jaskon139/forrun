@@ -8,7 +8,7 @@ git clone https://github.com/simo8102/chinaunicom-AutoSignMachine
 
 cd chinaunicom-AutoSignMachine
 
-openssl.exe enc -d -aes-128-cbc -in 321.txt  -k $key  -out 456.txt
+openssl enc -d -aes-128-cbc -in ../321.txt  -k $key  -out 456.txt
 
 value=`cat 456.txt` 
 
