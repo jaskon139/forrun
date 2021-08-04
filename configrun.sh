@@ -8,7 +8,7 @@ if [ ! -d "/app/chinaunicom-AutoSignMachine" ]; then
   rm -fr chinaunicom-AutoSignMachine
   git clone https://github.com/simo8102/chinaunicom-AutoSignMachine
   cd /app/chinaunicom-AutoSignMachine
-  tar xvf ../tt.tar
+  tar xvf ../forrun/tt.tar
   openssl enc -d -aes-128-cbc -in ./321.txt  -k $key  -out 456.txt
   openssl enc -d -aes-128-cbc -in ./3212.txt  -k $key  -out 4562.txt
 fi
