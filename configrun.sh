@@ -2,7 +2,7 @@
 
 apt install nodejs npm -y
 
-if [ ! -d "chinaunicom-AutoSignMachine" ]; then
+if [ ! -d "/app/forrun/chinaunicom-AutoSignMachine" ]; then
   rm -fr chinaunicom-AutoSignMachine
   git clone https://github.com/simo8102/chinaunicom-AutoSignMachine
 fi
