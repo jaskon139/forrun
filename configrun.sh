@@ -2,21 +2,18 @@
 
 apt install nodejs npm -y
 
-if [ ! -d "/app/forrun/chinaunicom-AutoSignMachine" ]; then
+cd /app
+
+if [ ! -d "/app/chinaunicom-AutoSignMachine" ]; then
   rm -fr chinaunicom-AutoSignMachine
   git clone https://github.com/simo8102/chinaunicom-AutoSignMachine
+  cd /app/chinaunicom-AutoSignMachine
+  tar xvf ../tt.tar
+  openssl enc -d -aes-128-cbc -in ./321.txt  -k $key  -out 456.txt
+  openssl enc -d -aes-128-cbc -in ./3212.txt  -k $key  -out 4562.txt
 fi
 
-cd chinaunicom-AutoSignMachine
-
-tar xvf ../tt.tar
-
-openssl enc -d -aes-128-cbc -in ./321.txt  -k $key  -out 456.txt
-
-openssl enc -d -aes-128-cbc -in ./3212.txt  -k $key  -out 4562.txt
-
 value=`cat 456.txt` 
-
 value2=`cat 4562.txt` 
 
 echo "value="
