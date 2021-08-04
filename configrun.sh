@@ -13,6 +13,8 @@ if [ ! -d "/app/chinaunicom-AutoSignMachine" ]; then
   openssl enc -d -aes-128-cbc -in ./3212.txt  -k $key  -out 4562.txt
 fi
 
+cd /app/chinaunicom-AutoSignMachine
+
 value=`cat 456.txt` 
 value2=`cat 4562.txt` 
 
